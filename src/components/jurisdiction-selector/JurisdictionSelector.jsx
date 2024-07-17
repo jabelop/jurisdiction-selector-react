@@ -29,6 +29,7 @@ const JurisdictionSelector = ({ fetchJurisdictionsTop, fetchJurisdictionsLow, da
         }
     };
 
+    // Fetch data on open dropdown instead on the useEffect hook to avoid unnecessary requests.
     const openDropDown = () => {
         setShowOption((prev) => !prev);
         setLoading(true);
