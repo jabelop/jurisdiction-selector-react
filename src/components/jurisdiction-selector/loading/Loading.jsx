@@ -1,9 +1,9 @@
 import './Loading.css';
 
-const Loading = () => {
+const Loading = ({loadingKey}) => {
 
     return (
-        <div id={'loading'} key={'loading'} className="loader"></div> 
+        <div id={'loading'} key={loadingKey} className="loader"></div> 
     );
 };
 
